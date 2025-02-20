@@ -178,7 +178,8 @@ def home_page():
     """)
     st.write("Veuillez sélectionner votre rôle dans la barre latérale pour commencer.")
 
-st.sidebar.image("/Users/abakarmahamatnezir/Documents/HETIC2024/S1/INTRO MANAGEMENT/ZenWork/image/image_3.png",use_container_width=True,)
+st.sidebar.image("image/image_3.png",use_container_width=True,)
+
 
 
 
