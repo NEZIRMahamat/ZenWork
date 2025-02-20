@@ -39,7 +39,7 @@ for semaine in range(1, 20):  # 8 semaines
         competences = random.choice(competences_necessaires)
         clarte = random.choice(clarte_objectifs)
 
-        # 🔥 Niveau de stress plus réaliste
+        # Niveau de stress plus réaliste
         base_stress = random.randint(3, 8)  # Stress de base entre 3 et 8
         if accompagnement == "Non":
             base_stress += 2  # Moins d'accompagnement = plus de stress
@@ -88,6 +88,6 @@ for semaine in range(1, 20):  # 8 semaines
 df = pd.DataFrame(data, columns=columns)
 
 # Sauvegarde en CSV
-file_path = "D:\school\HETIC\PYTHON\intro managment\data_realistic.csv"
+file_path = "data/data_realistic.csv"
 df.to_csv(file_path, index=False)
 file_path
