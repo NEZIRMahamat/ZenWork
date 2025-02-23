@@ -51,7 +51,7 @@ for semaine in range(1, 20):  # 8 semaines
             base_stress += 1
         stress = max(1, min(10, base_stress))
 
-        # ⭐ Intérêt des missions dépend de la clarté et des compétences requises
+        # Intérêt des missions dépend de la clarté et des compétences requises
         base_interet = random.randint(2, 4)
         if clarte in ["Très clairs", "Assez clairs"]:
             base_interet += 1
@@ -59,7 +59,7 @@ for semaine in range(1, 20):  # 8 semaines
             base_interet += 1
         interet = max(1, min(5, base_interet))
 
-        # 😟 Anxiété liée au stress et aux délais
+        # Anxiété liée au stress et aux délais
         if stress > 7 or deadlines == "Rarement":
             anxiete = "Souvent"
         elif stress > 5:
@@ -67,7 +67,7 @@ for semaine in range(1, 20):  # 8 semaines
         else:
             anxiete = "Jamais"
 
-        # 🏋️‍♂️ Soutien équipe
+        # Soutien équipe
         if accompagnement == "Oui":
             soutien = random.randint(4, 5)  # Bon soutien
         elif accompagnement == "Partiellement":
@@ -75,7 +75,7 @@ for semaine in range(1, 20):  # 8 semaines
         else:
             soutien = random.randint(1, 3)  # Peu de soutien
 
-        # 📝 Génération de remarques aléatoires
+        #Génération de remarques aléatoires
         remarque = fake.sentence(nb_words=10)
 
         # Ajout des données
